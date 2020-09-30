@@ -1,60 +1,50 @@
 <div class="login-content">
     <div class="p-8">
         <div class="login">
-            <mat-card class="login-card">
-                <div class="row">
-                    <div class="col-sm-12 col-md-5 col-lg-5">
+          <mat-card class="login-card">
+               <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-5 reset-padding">
                         <div class="image-container h-100">
                             <img src="../../../../../assets/images/dreamer-f90.jpg" alt="login icon">
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-7 col-lg-7 login-column">
+                    <div class="col-sm-12 col-md-7 col-lg-7 login-column reset-padding">
                         <div class="login-form">
                             <form>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <mat-form-field appearance="outline" class="w-100 form-input">
-                                            <mat-label>Email</mat-label>
-                                            <input matInput placeholder="Email">
-                                        </mat-form-field>
-                                    </div>
-                                </div>
+                                <app-row>
+                                    <mat-form-field appearance="outline" class="w-100 form-input" rowContent>
+                                        <mat-label>Email</mat-label>
+                                        <input matInput placeholder="Email">
+                                    </mat-form-field>
+                                </app-row>
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <mat-form-field appearance="outline" class="w-100 form-input">
-                                            <mat-label>Password</mat-label>
-                                            <input matInput placeholder="Password">
-                                        </mat-form-field>
-                                    </div>
-                                </div>
+                                <app-row>
+                                    <mat-form-field appearance="outline" class="w-100 form-input" rowContent>
+                                        <mat-label>Password</mat-label>
+                                        <input matInput placeholder="Password">
+                                    </mat-form-field>
+                                </app-row>
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <mat-checkbox color="warn" class="float-left" checked="true">
-                                            I have read and agree to the terms of service.
-                                        </mat-checkbox>
-                                    </div>
-                                </div>
+                                <app-row>
+                                    <mat-checkbox color="warn" class="float-left mobileFont" checked="true" rowContent >
+                                        I have read and agree to the terms of service.
+                                    </mat-checkbox>
+                                </app-row>
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <button mat-raised-button color="primary" class="float-left mt-2">Sign in to Enter Dashboard</button>
-                                        <span class="float-left ml-3 mr-3 mt-3">or</span>
-                                        <button mat-button class="float-left mt-2">Sign Up</button>
-                                    </div>
-                                </div>
+                                <app-row>
+                                    <button mat-raised-button color="primary" class="float-left mt-2 mobileFont" rowContent>Sign in to Enter Dashboard</button>
+                                    <span class="float-left ml-3 mr-3 mt-3 mobileMargin" rowContent>or</span>
+                                    <button mat-button class="float-left mt-2 mobileFont" rowContent>Sign Up</button>
+                                </app-row>
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <button mat-button class="float-left mt-3" color="primary">Forgot password?</button>
-                                    </div>
-                                </div>
+                                <app-row>
+                                    <button mat-button class="float-left mt-3" color="primary" rowContent>Forgot password?</button>
+                                </app-row>
                             </form>
                         </div>
                     </div>
                 </div>
             </mat-card>
-        </div>
+        </div> 
     </div>
 </div>

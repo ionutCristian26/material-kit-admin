@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "material-kit-admin"
+  "defaultProject": "material-kit-admin",
+  "cli": {
+    "analytics": false
+  }
 }
