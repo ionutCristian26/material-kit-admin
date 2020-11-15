@@ -11,7 +11,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { RowComponent } from './components/row/row.component';
+import { RowComponent } from '../../common/row/row.component';
+import { AuthLayoutComponent } from './components/auth-layout/auth-layout.component';
+import { ForgoPwdComponent } from './pages/forgo-pwd/forgo-pwd.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { RowComponent } from './components/row/row.component';
     LoginComponent,
     RegisterComponent,
     RowComponent,
+    AuthLayoutComponent,
+    ForgoPwdComponent,
   ],
   imports: [
     CommonModule,

@@ -11,5 +11,4 @@ export class RowComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
