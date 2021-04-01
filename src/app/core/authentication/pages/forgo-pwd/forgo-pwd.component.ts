@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-forgo-pwd',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgoPwdComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: AuthService) { }
 
   ngOnInit(): void {
   }
-
 }

@@ -21,8 +21,8 @@ import { ForgoPwdComponent } from './pages/forgo-pwd/forgo-pwd.component';
     LoginComponent,
     RegisterComponent,
     RowComponent,
-    AuthLayoutComponent,
     ForgoPwdComponent,
+    AuthLayoutComponent,
   ],
   imports: [
     CommonModule,
