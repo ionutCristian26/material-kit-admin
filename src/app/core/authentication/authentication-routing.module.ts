@@ -10,30 +10,30 @@ const routes: Routes = [
     path: '',
     component: AuthenticationComponent,
     children: [
-        {
-          path: '',
-          pathMatch: 'full',
-          redirectTo: '/auth/login'
-        },
-        {
-          path: 'login',
-          component: LoginComponent
-        },
-        {
-          path: 'register',
-          component: RegisterComponent
-        },
-        {
-          path: 'forgot-password',
-          component: ForgoPwdComponent
-        },
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: '/auth/login'
+      },
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: 'register',
+        component: RegisterComponent
+      },
+      {
+        path: 'forgot-password',
+        component: ForgoPwdComponent
+      },
     ]
-  }
-  // todo
-  // {
-  //   path: '**',
-  //   component: ErrorComponent
-  // }
+  },
+  {
+    path: '*',
+    loadChildren: () => import('../miscellaneous/miscellaneous.module')
+      .then(m => m.MiscellaneousModule),
+  },
 ];
 
 @NgModule({
